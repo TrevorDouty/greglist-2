@@ -96,6 +96,41 @@
 
             </div>
         </div>
+
+        <div class="container-fluid">
+            <form class="border-bottom border-dark mb-4" onsubmit="app.jobController.postJob(event)">
+
+                <div class="form-group row">
+                    <label for="inputName" class="col-sm-1-12 col-form-label"></label>
+                    <div class="col-sm-1-12">
+                        <input type="text" class="form-control" name="inputName" id="company" placeholder="">Company
+                    </div>
+                    <label for="inputName" class="col-sm-1-12 col-form-label"></label>
+                    <div class="col-sm-1-12">
+                        <input type="text" class="form-control" name="inputName" id="jobTitle" placeholder="">Job Title
+                    </div>
+                    <label for="inputName" class="col-sm-1-12 col-form-label"></label>
+                    <div class="col-sm-1-12">
+                        <input type="number" class="form-control" name="inputName" id="hours" placeholder="">Hours
+                    </div>
+                    <label for="inputName" class="col-sm-1-12 col-form-label"></label>
+                    <div class="col-sm-1-12">
+                        <input type="number" class="form-control" name="inputName" id="rate" placeholder="">Rate
+                    </div>
+
+                    <textarea name="description" class="form-control" id="" cols="20" rows="5">Description</textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+
+
+        <div class="container-fluid" id="app">
+            <div class="row" id="jobs">
+
+            </div>
+        </div>
     </main>
     <footer class="container-fluid bg-dark text-light">
         <div class="row text-center">

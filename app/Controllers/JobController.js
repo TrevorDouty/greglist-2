@@ -19,7 +19,9 @@ export default class JobController {
   }
 
   postJob(e) {
-    e.preventDefualt()
+
+    e.preventDefault()
+
     let form = e.target
     let newJob = {
       company: form.company.value,
@@ -29,6 +31,7 @@ export default class JobController {
       description: form.description.value,
 
     }
+    form.reset()
     jobService.postJob(newJob)
   }
 

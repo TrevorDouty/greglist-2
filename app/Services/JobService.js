@@ -15,7 +15,9 @@ class JobService {
 
   postJob(newJob) {
     api.post('jobs', newJob).then(res => {
+      console.log(res);
       this.getJob()
+
     }).catch(err => console.error(err))
   }
 

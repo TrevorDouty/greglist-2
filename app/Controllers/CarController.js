@@ -31,6 +31,7 @@ export default class CarController {
 
 
     }
+    form.reset()
     carService.postCar(newCar)
   }
 

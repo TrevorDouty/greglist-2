@@ -30,6 +30,7 @@ export default class HouseController {
       description: form.description.value,
       imgUrl: form.imgUrl.value
     }
+    form.reset()
     houseService.postHouse(newHouse)
   }
 

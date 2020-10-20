@@ -14,10 +14,10 @@ export default class Job {
     <div class="col-3 card border border-dark rounded shadow-lg text-wrap">
 
 <h4>${this.company}</h4>  
-<p>${this.jobTitle}</p>
+<p>Title: ${this.jobTitle}</p>
 <h4>${this.description}</h4>
-<h4> ${this.hours}</h4>
-<p>${this.rate}</p>
+<h4> ${this.hours} hours per week</h4>
+<p>${this.rate} per hr</p>
 
 <button class="btn btn-danger btn-block" onclick="app.jobController.deleteJob('${this._id}')">Delete</button>
 </div>`
