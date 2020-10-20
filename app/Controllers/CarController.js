@@ -34,6 +34,8 @@ export default class CarController {
     carService.postCar(newCar)
   }
 
-
+  deleteCar(carId) {
+    carService.deleteCar(carId)
+  }
 
 }

@@ -20,6 +20,12 @@ class CarService {
       this.getCars()
     }).catch(err => console.error(err))
   }
+
+  deleteCar(carId) {
+    api.delete("cars/" + carId).then(res => {
+      this.getCars()
+    }).catch(err => console.error(err))
+  }
 }
 
 export const carService = new CarService();

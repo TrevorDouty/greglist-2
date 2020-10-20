@@ -12,14 +12,14 @@ export default class Car {
     get Template() {
 
         return /*html*/`
-        <div class="col-3 border border-dark rounded shadow-lg">
+        <div class="col-3 card border border-dark rounded shadow-lg text-wrap">
     <img class="img-fluid" src="${this.imgUrl}" alt="">
     <h4>${this.price}</h4>  
     <h4>${this.make}</h4>
     <h4> ${this.model}</h4>
     <p>${this.price}</p>
     <p>${this.description}</p>
-    <button class="btn btn-danger btn-block" onclick="app.CarController.delete('${this._id}')">Delete</button>
+    <button class="btn btn-danger btn-block" onclick="app.carController.deleteCar('${this._id}')">Delete</button>
 
 
 
